@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#211E1A"/>
+      <stop offset="60%" stop-color="#12100E"/>
+      <stop offset="100%" stop-color="#080706"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7EEDF"/>
+      <stop offset="30%" stop-color="#DFCAAB"/>
+      <stop offset="65%" stop-color="#C5A880"/>
+      <stop offset="100%" stop-color="#9C7F59"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFCAAB" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#9C7F59" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Squircle -->
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Border Rim -->
+  <rect x="22" y="22" width="468" height="468" rx="102" fill="none" stroke="url(#borderGrad)" stroke-width="4"/>
+
+  <!-- Interior Architectural Arch (The Roomora Portal) -->
+  <path d="M 136 384 V 224 C 136 158 190 104 256 104 C 322 104 376 158 376 224 V 384" 
+        fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-opacity="0.3" stroke-dasharray="6 8"/>
+
+  <!-- High-End Serif Monogram 'R' -->
+  <g fill="url(#goldGrad)">
+    <!-- Main Left Stem -->
+    <path d="M 166 160 H 228 V 178 H 208 V 334 H 230 V 352 H 166 V 334 H 186 V 178 H 166 Z"/>
+    
+    <!-- Outer Bowl of R and Leg -->
+    <path d="M 208 160 H 268 C 304 160 326 172 334 186 C 342 200 342 216 334 230 C 324 246 304 256 276 260 L 328 334 H 356 V 352 H 294 L 246 270 H 208 V 254 H 252 C 286 254 316 242 316 210 C 316 182 288 176 254 176 H 208 Z"/>
+    
+    <!-- Curated Diamond Star Accent -->
+    <path d="M 364 140 Q 364 154 378 154 Q 364 154 364 168 Q 364 154 350 154 Q 364 154 364 140 Z"/>
+  </g>
+</svg>
